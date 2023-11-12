@@ -399,7 +399,7 @@ body.scroll {
     opacity: 0.4;
 }
 
-.input__input-field {
+.input {
     color: var(--black);
     font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
@@ -423,8 +423,198 @@ body.scroll {
     transition-duration: 0.3s;
 }
 
-.input__input-field:hover,
-.input__input-field:active,
-.input__input-field:focus {
+.input:hover,
+.input:active,
+.input:focus {
     border-color: var(--black);
+}
+
+.input--footer {
+    color: var(--silver-1);
+    font-family: "Roboto";
+    background-color: transparent;
+    height: 52px;
+    margin-bottom: 20px;
+    padding: 17px 17px 17px 31px;
+    border-bottom: 1px solid var(--snow);
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.input--footer:hover,
+.input--footer:active,
+.input--footer:focus {
+    border-color: var(--deep-sky-blue);
+}
+
+.input--name {
+    background-image: url("../images/name.svg");
+}
+
+.input--phone {
+    padding-left: 36px;
+    background-image: url("../images/phone.svg");
+}
+
+.input--mail {
+    padding-left: 47px;
+    background-image: url("../images/mail.svg");
+}
+
+.footer {
+    padding: 47px 0 60px;
+    background-color: var(--black);
+}
+
+.footer__title {
+    color: var(--white);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.footer__text {
+    color: var(--deep-sky-blue);
+    line-height: 19px;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+.form__button {
+    color: var(--black-pearl);
+    font-size: 13px;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 23px 51px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--white);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.form__button:hover,
+.form__button:active {
+    opacity: 0.4;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.footer-navigation__item {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.footer-navigation__item:hover,
+.footer-navigation__item:active {
+    color: var(--deep-sky-blue);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social__item {
+    font-weight: 300;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    opacity: 0.6;
+    transition-property: color, opacity;
+    transition-duration: 0.3s;
+}
+
+.social__item:hover,
+.social__item:active {
+    color: var(--deep-sky-blue);
+    opacity: 1;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.contact__phone {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.contact__phone:hover,
+.contact__phone:active {
+    color: var(--deep-sky-blue);
+}
+
+.contact__mail {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.contact__mail:hover,
+.contact__mail:active {
+    color: var(--deep-sky-blue);
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__link {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+    color: var(--deep-sky-blue);
+}
+
+
+.footer__copyright {
+    color: var(--white);
+    font-size: 16px;
+    line-height: normal;
+    opacity: 0.6;
 }
