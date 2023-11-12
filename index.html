@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/fonts-style.css">
+    <link rel="stylesheet" href="styles/variables.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <button type="button" class="header__city">
+                    <img class="header__city-icon" src="images/map-pin.svg" alt="" width="14" height="14">
+                    <span class="header__city-text">Нижний Новгород</span>
+                </button>
+                <div class="header__navigation-wrapper js-nav">
+                    <nav class="navigation js-content">
+                        <ul class="navigation__list">
+                            <li class="navigation__item js-menu-item">
+                                <a class="navigation__link" href="javascript:void(0);" title="Как заказать">Как заказать</a>
+                            </li>
+                            <li class="navigation__item js-menu-item">
+                                <a class="navigation__link" href="javascript:void(0);" title="Доставка и&nbsp;оплата">Доставка и&nbsp;оплата</a>
+                            </li>
+                            <li class="navigation__item js-menu-item">
+                                <a class="navigation__link" href="javascript:void(0);" title="Кредит и&nbsp;рассрочка">Кредит и&nbsp;рассрочка</a>
+                            </li>
+                            <li class="navigation__item js-menu-item">
+                                <a class="navigation__link" href="javascript:void(0);" title="Сборка">Сборка</a>
+                            </li>
+                            <li class="navigation__item js-menu-item">
+                                <a class="navigation__link navigation__link--icon" href="javascript:void(0);" title="Частые вопросы">Частые вопросы</a>
+                                <div class="navigation__sub-wrapper js-menu-sub">
+                                    <ul class="navigation__sub-list">
+                                        <li class="navigation__item">
+                                            <a class="navigation__link" href="javascript:void(0);" title="О&nbsp;нас">О&nbsp;нас</a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a class="navigation__link" href="javascript:void(0);" title="Отзывы">Отзывы</a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a class="navigation__link" href="javascript:void(0);" title="Гарантии">Гарантии</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="navigation__close js-close-nav">
+                        <img class="navigation__close-icon" src="images/plus.svg" alt="" width="24" height="24">
+                    </button>
+                </div>
+                <a class="header__phone" href="tel:+73472926252" title="+7 (347) 292-62-52">+7 (347) 292-62-52</a>
+                <button type="button" class="header__menu js-open-nav">
+                    <svg class="header__menu-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_943)">
+                        <path d="M2.375 3.16663H16.625V4.74996H2.375V3.16663ZM2.375 8.70829H11.875V10.2916H2.375V8.70829ZM2.375 14.25H16.625V15.8333H2.375V14.25Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_943">
+                        <rect width="19" height="19" fill="currentColor"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Меню</span>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <a class="header__logo" href='/' title="">
+                    <div class="header__logo-mobile"></div>
+                    <img class="header__logo-desktop" src="images/logo.svg" alt="" width="160" height="45">
+                </a>
+                <div class="header__button-wrapper">
+                    <button type="button" class="header__menu header__menu--catalog">
+                        <svg class="header__menu-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_943)">
+                            <path d="M2.375 3.16663H16.625V4.74996H2.375V3.16663ZM2.375 8.70829H11.875V10.2916H2.375V8.70829ZM2.375 14.25H16.625V15.8333H2.375V14.25Z" fill="currentColor"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_943">
+                            <rect width="19" height="19" fill="currentColor"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Каталог</span>
+                    </button>
+                    <button type="button" class="header__menu header__menu--search js-open-search">
+                        <img class="header__menu-icon" src="images/search.svg" alt="" width="19" height="19">
+                    </button>
+                    <div class="search js-search">
+                        <div class="search__content js-content">
+                            <form class="search__form">
+                                <input class="input__input-field" id="search" name="search" placeholder="Например, двухъярусная кровать" type="text" inputmode="search" aria-label="Поиск">
+                                <button rel="noopener" class="search__button">
+                                    <img class="search__button-icon" src="images/search.svg" alt="" width="19" height="19">
+                                </button>
+                            </form>
+                            <button type="button" class="search__close js-close-search">
+                                <img class="search__close-icon" src="images/plus.svg" alt="" width="24" height="24">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-list">
+                    <a class="user-list__item user-list__item--favorites" href="javascript:void(0);" title="Избранное">
+                        <img class="user-list__icon" src="images/heart.svg" alt="" width="24" height="24">
+                    </a>
+                    <a class="user-list__item user-list__item--address" href="javascript:void(0);" title="Адреса">
+                        <span class="user-list__text">Адреса</span>
+                        <img class="user-list__icon" src="images/map-pin.svg" alt="" width="19" height="19">
+                    </a>
+                    <a class="user-list__item user-list__item--profile" href="javascript:void(0);" title="Профиль">
+                        <span class="user-list__text">Профиль</span>
+                        <img class="user-list__icon" src="images/user.svg" alt="" width="19" height="19">
+                    </a>
+                    <a class="user-list__item user-list__item--cart" href="javascript:void(0);" title="Корзина">
+                        <img class="user-list__icon" src="images/cart.svg" alt="" width="24" height="24">
+                        <span class="user-list__count">1</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

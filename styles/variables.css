@@ -1,0 +1,10 @@
+:root {
+    --black: #000000;
+    --black-03: rgba(0, 0, 0, 0.3);
+    --black-06: rgba(0, 0, 0, 0.6);
+    --black-08: rgba(0, 0, 0, 0.8);
+    --white: #ffffff;
+    --light-grey: #eeeeee;
+    --deep-sky-blue: #00D6FF;
+    --silver: #C4C4C4;
+}
