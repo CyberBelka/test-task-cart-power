@@ -261,6 +261,15 @@
     .form__button {
         margin-left: 50px;
     }
+
+    .first-block {
+        margin-bottom: 80px;
+        padding: 91px 40px 20px;
+    }
+
+    .first-block__title {
+        font-size: 48px;
+    }
 }
 
 @media (min-width: 1280px) {
