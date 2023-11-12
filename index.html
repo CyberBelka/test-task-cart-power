@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/fonts-style.css">
@@ -126,19 +127,58 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <section class="first-block">
-                <div class="breadcrumbs">
-                    <a href="/" class="breadcrumbs__link" title="Главная">Главная</a>
-                    <a href="javascript:void(0);" class="breadcrumbs__link" title="Все коллекции">Все коллекции</a>
-                    <a href="javascript:void(0);" class="breadcrumbs__link" title="Альба">Альба</a>
-                    <span class="breadcrumbs__link">Спальня</span>
+        <section class="first-block">
+            <div class="container">
+                <div class="first-block__inner">
+                    <div class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__link" title="Главная">Главная</a>
+                        <a href="javascript:void(0);" class="breadcrumbs__link" title="Все коллекции">Все коллекции</a>
+                        <a href="javascript:void(0);" class="breadcrumbs__link" title="Альба">Альба</a>
+                        <span class="breadcrumbs__link">Спальня</span>
+                    </div>
+                    <h1 class="first-block__title">Спальня</h1>
+                    <p class="first-block__description">Спальня коллекции Альба</p>
+                    <img class="first-block__image" src="images/back.jpg" alt="" width="1160" height="300">
                 </div>
-                <h1 class="first-block__title">Спальня</h1>
-                <p class="first-block__description">Спальня коллекции Альба</p>
-                <img class="first-block__image" src="images/back.jpg" alt="" width="1160" height="300">
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="main-slider">
+            <div class="container">
+                <h2 class="main-slider__title">Фотографии и&nbsp;видео</h2>
+               <div class="main-slider__slider-wrapper">
+                    <div class="main-slider__slider js-main-slider">
+                        <ul class="main-slider__list swiper-wrapper">
+                            <li class="main-slider__item swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                            </li>
+                            <li class="main-slider__item main-slider__item--video swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                            </li>
+                            <li class="main-slider__item swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg " alt="" width="260" height="170">
+                            </li>
+                            <li class="main-slider__item swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                            </li>
+                            <li class="main-slider__item swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                            </li>
+                            <li class="main-slider__item main-slider__item--video swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                            </li>
+                            <li class="main-slider__item swiper-slide">
+                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-slider__navigation">
+                        <button aria-label="Предыдущий слайд" class="main-slider__button swiper-button-prev"></button>
+                        <button aria-label="Следующий слайд" class="main-slider__button swiper-button-next"></button>
+                    </div>
+               </div>
+                <div class="main-slider__text">Представляем вашему вниманию спальный гарнитур &laquo;Натали&raquo; Он&nbsp;выполнен в&nbsp;классическом стиле с&nbsp;элементами аристократии и&nbsp;роскоши. В&nbsp;комплект входят: кровать, прикроватные тумбы, несколько вариантов шкафов и&nbsp;комод с&nbsp;зеркалом. Обратите внимание, все модули комплекта вы&nbsp;можете приобрести по&nbsp;отдельности. Коллекция &laquo;Натали&raquo; может быть выполнена в&nbsp;двух цветах: в&nbsp;темном оттенке &laquo;Орех&raquo;, а&nbsp;также в&nbsp;более светлом решении &laquo;Клен Ясень Бежевый&raquo; Рекомендуем Вам обязательно посмотреть видео спальни, гостиной и&nbsp;прихожей из&nbsp;коллекции &laquo;Натали&raquo;.</div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container container--footer">
@@ -181,6 +221,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/slider.js"></script>
 </body>
 </html>

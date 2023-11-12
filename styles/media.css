@@ -264,11 +264,38 @@
 
     .first-block {
         margin-bottom: 80px;
+    }
+
+    .first-block__inner {
         padding: 91px 40px 20px;
     }
 
     .first-block__title {
         font-size: 48px;
+    }
+
+    .main-slider__title {
+        font-size: 48px;
+    }
+
+    .main-slider__slider {
+        margin-bottom: 80px;
+        overflow: hidden;
+    }
+
+    .main-slider__navigation {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+        transform: translate(0, -50%);
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .main-slider__text {
+        margin-bottom: 80px;
     }
 }
 
@@ -286,5 +313,10 @@
 
     .footer__bottom {
         padding: 0 16px 0 8px;
+    }
+
+    .main-slider__navigation {
+        width: calc(100% + 100px);
+        margin: 0 -50px;
     }
 }
