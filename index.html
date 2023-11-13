@@ -496,10 +496,16 @@
         <div class="container container--footer">
             <h2 class="footer__title">Сайт рыбатекст поможет дизайнеру, верстальщику</h2>
             <p class="footer__text">Оставьте заявку и&nbsp;мы&nbsp;пришлем вам ссылку</p>
-            <form class="form">
-                <input class="input input--footer input--name" id="name" name="name" placeholder="Ваше имя" type="text">
-                <input class="input input--footer input--phone" id="phone" name="phone" placeholder="Ваш телефон" type="tel">
-                <input class="input input--footer input--mail" id="mail" name="mail" placeholder="Ваша почта" type="email">
+            <form class="form js-form">
+                <div class="form__input-wrapper">
+                    <input class="input input--footer input--name js-form-name" id="name" name="name" placeholder="Ваше имя" type="text" required>
+                </div>
+                <div class="form__input-wrapper">
+                    <input class="input input--footer input--phone js-form-phone" id="phone" name="phone" placeholder="Ваш телефон" type="tel" required>
+                </div>
+                <div class="form__input-wrapper">
+                    <input class="input input--footer input--mail js-form-mail" id="mail" name="mail" placeholder="Ваша почта" type="email" required>
+                </div>
                 <button class="form__button">Подписаться</button>
             </form>
             <div class="footer__bottom">
@@ -534,7 +540,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/validation.js"></script>
 </body>
 </html>

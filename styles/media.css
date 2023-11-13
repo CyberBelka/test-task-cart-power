@@ -132,6 +132,10 @@
         margin-bottom: 0;
     }
 
+    .form__input-wrapper .just-validate-error-label {
+        bottom: -25px;
+    }
+
     .footer__title {
         max-width: 467px;
     }
@@ -253,7 +257,7 @@
     }
 
     .input--footer {
-        width: 232px;
+        max-width: 232px;
         border-radius: 0;
         border-bottom: 1px solid var(--snow);
     }

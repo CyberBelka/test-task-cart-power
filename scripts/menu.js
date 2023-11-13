@@ -61,19 +61,9 @@ document.addEventListener('mouseup', (e) => {
 window.addEventListener("DOMContentLoaded", () => {
     const menuItem = document.querySelectorAll('.js-menu-item');
 
-    if ( menuItem.length === 0) {
-        console.log('MenuItem not found');
-        return;
-    }
-
     menuItem.forEach((item) => {
         const submenu = item.querySelector('.js-menu-sub');
         let timerId;
-
-        if ( !submenu ) {
-            console.log('Submenu not found');
-            return;
-        }
 
         item.addEventListener('mouseenter', () => {
             clearTimeout(timerId);

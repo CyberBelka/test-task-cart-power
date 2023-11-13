@@ -445,7 +445,7 @@ body.scroll {
 .input--footer:hover,
 .input--footer:active,
 .input--footer:focus {
-    border-color: var(--deep-sky-blue);
+    border-bottom: 1px solid var(--deep-sky-blue);
 }
 
 .input--name {
@@ -460,6 +460,17 @@ body.scroll {
 .input--mail {
     padding-left: 47px;
     background-image: url("../images/mail.svg");
+}
+
+.form__input-wrapper {
+    position: relative;
+}
+
+.form__input-wrapper .just-validate-error-label {
+    position: absolute;
+    display: inline-block;
+    bottom: -2px;
+    left: 0;
 }
 
 .footer {
