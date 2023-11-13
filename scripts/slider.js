@@ -25,3 +25,17 @@ const swiper2 = new Swiper('.js-selection-slider', {
         },
     }
 });
+
+const swiper3 = new Swiper('.js-product-slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    navigation: {
+        nextEl: '.slider-navigation__button--product.swiper-button-next',
+        prevEl: '.slider-navigation__button--product.swiper-button-prev'
+    },
+    breakpoints: {
+        768: {
+            spaceBetween: 20,
+        },
+    }
+});

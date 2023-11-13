@@ -758,7 +758,8 @@ body.scroll {
     margin-bottom: 40px;
 }
 
-.slider-navigation--selection {
+.slider-navigation--selection,
+.slider-navigation--product {
     margin-bottom: 0;
 }
 
@@ -780,6 +781,15 @@ body.scroll {
 .slider-navigation--selection .slider-navigation__button::before {
     width: 33px;
     height: 33px;
+}
+
+.slider-navigation--product {
+    height: 45px;
+}
+
+.slider-navigation__button--product {
+    width: 45px;
+    height: 45px;
 }
 
 .swiper-button-prev,
@@ -840,6 +850,7 @@ body.scroll {
 }
 
 .selection {
+    margin-bottom: 40px;
     padding: 40px 0;
     background-color: var(--light-grey);
     overflow: hidden;
@@ -978,6 +989,7 @@ body.scroll {
     background-color: var(--black);
     transition-property: opacity;
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .cart-button:hover,
@@ -1002,14 +1014,31 @@ body.scroll {
 }
 
 .card {
-    color: var(--black);
-    text-decoration: none;
+    position: relative;
     width: 216px;
     background-color: var(--white);
     border-radius: 6px;
     padding: 20px 15px;
     overflow: hidden;
     height: min-content;
+}
+
+.card--dark {
+    background-color: var(--gainsboro);
+}
+
+.card__discount {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 14px;
+    line-height: normal;
+    display: block;
+    background-color: var(--white);
+    padding: 6px 10px;
+    border-radius: 4px;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .card__image {
@@ -1023,12 +1052,49 @@ body.scroll {
     margin-bottom: 15px;
 }
 
+.card__link {
+    color: var(--black);
+    display: inline-block;
+    margin-bottom: 13px;
+    text-decoration: none;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.card__link :hover,
+.card__link :active {
+    opacity: 0.4;
+}
+
 .card__title {
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     margin: 0;
-    margin-bottom: 15px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.card__old-price {
+    position: relative;
+    font-size: 13px;
+    line-height: normal;
+    display: inline-block;
+    margin-bottom: 8px;
+    width: min-content;
+}
+
+.card__old-price::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom right, transparent 45%, #000000, transparent 54%);
+    background-repeat: no-repeat;
+    font-size: 13px;
+    text-align: center;
+    color: var(--black);
 }
 
 .card__price {
@@ -1036,5 +1102,23 @@ body.scroll {
     font-weight: 700;
     line-height: normal;
     display: inline-block;
+    width: 100%;
     margin-bottom: 25px;
+}
+
+.product-slider {
+    overflow: hidden;
+    margin-bottom: 26px;
+}
+
+.product-slider__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.product-slider__slider {
+    margin-bottom: 20px;
 }
