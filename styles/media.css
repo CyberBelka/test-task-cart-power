@@ -45,8 +45,11 @@
     }
 
     .header__bottom {
-        gap: 20px;
         padding: 22px 0 23px;
+    }
+
+    .header__bottom-container {
+        gap: 20px;
     }
 
     .header__logo-mobile {
@@ -164,6 +167,14 @@
     .contact {
         margin-bottom: 0;
     }
+
+    .first-block__picture {
+        height: 300px;
+    }
+
+    .first-block__inner {
+       height: 300px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -196,6 +207,29 @@
 
     .header__bottom {
         gap: 40px;
+    }
+
+    .header__bottom-container {
+        position: relative;
+    }
+
+    .header__navigation-wrapper--catalog {
+        opacity: 0;
+        display: none;
+    }
+
+    .header__navigation-wrapper--catalog.open {
+        position: absolute;
+        max-width: 360px;
+        top: 68px;
+        left: 180px;
+        padding: 20px;
+        opacity: 1;
+        display: block;
+    }
+
+    .header__navigation-wrapper--catalog .navigation__list {
+        flex-direction: column;
     }
 
     .navigation {

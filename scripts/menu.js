@@ -5,6 +5,13 @@ const body = document.querySelector('body');
 const closeSearch = document.querySelector('.js-close-search');
 const openSearch = document.querySelector('.js-open-search');
 const search = document.querySelector('.js-search');
+const closeCatalog = document.querySelector('.js-close-catalog');
+const openCatalog = document.querySelector('.js-open-catalog');
+const catalog = document.querySelector('.js-catalog');
+
+openCatalog.addEventListener('click', (e) => {
+    catalog.classList.toggle('open');
+});
 
 function closedNav() {
     nav.classList.remove('open');

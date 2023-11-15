@@ -71,57 +71,86 @@
                 </button>
             </div>
             <div class="header__bottom">
-                <a class="header__logo" href='/' title="">
-                    <div class="header__logo-mobile"></div>
-                    <img class="header__logo-desktop" src="images/logo.svg" alt="" width="160" height="45">
-                </a>
-                <div class="header__button-wrapper">
-                    <button type="button" class="header__menu header__menu--catalog">
-                        <svg class="header__menu-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_943)">
-                            <path d="M2.375 3.16663H16.625V4.74996H2.375V3.16663ZM2.375 8.70829H11.875V10.2916H2.375V8.70829ZM2.375 14.25H16.625V15.8333H2.375V14.25Z" fill="currentColor"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_943">
-                            <rect width="19" height="19" fill="currentColor"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <span>Каталог</span>
-                    </button>
-                    <button type="button" class="header__menu header__menu--search js-open-search">
-                        <img class="header__menu-icon" src="images/search.svg" alt="" width="19" height="19">
-                    </button>
-                    <div class="search js-search">
-                        <div class="search__content js-content">
-                            <form class="search__form">
-                                <input class="input" id="search" name="search" placeholder="Например, двухъярусная кровать" type="text" inputmode="search" aria-label="Поиск">
-                                <button rel="noopener" class="search__button">
-                                    <img class="search__button-icon" src="images/search.svg" alt="" width="19" height="19">
+                <div class="header__bottom-container">
+                    <div class="header__navigation-wrapper header__navigation-wrapper--catalog js-catalog">
+                        <nav class="navigation js-content">
+                            <ul class="navigation__list js-catalog-list">
+                                <li class="navigation__item js-menu-item">
+                                    <a class="navigation__link" href="javascript:void(0);" title="КМебель для кухни">Мебель для кухни</a>
+                                </li>
+                                <li class="navigation__item js-menu-item">
+                                    <a class="navigation__link" href="javascript:void(0);" title="Мебель для гостиной">Мебель для гостиной</a>
+                                </li>
+                                <li class="navigation__item js-menu-item">
+                                    <a class="navigation__link" href="javascript:void(0);" title="Мебель для спальни">Мебель для спальни</a>
+                                </li>
+                                <li class="navigation__item js-menu-item">
+                                    <a class="navigation__link" href="javascript:void(0);" title="Шкафы">Шкафы</a>
+                                </li>
+                                <li class="navigation__item js-menu-item">
+                                    <a class="navigation__link" href="javascript:void(0);" title="Детская мебель">Детская мебель</a>
+                                </li>
+                                <li class="navigation__item js-menu-item">
+                                    <a class="navigation__link" href="javascript:void(0);" title="Мягкая мебель">Мягкая мебель</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button type="button" class="navigation__close js-close-catalog">
+                            <img class="navigation__close-icon" src="images/plus.svg" alt="" width="24" height="24">
+                        </button>
+                    </div>
+                    <a class="header__logo" href='/' title="">
+                        <div class="header__logo-mobile"></div>
+                        <img class="header__logo-desktop" src="images/logo.svg" alt="" width="160" height="45">
+                    </a>
+                    <div class="header__button-wrapper">
+                        <button type="button" class="header__menu header__menu--catalog js-open-catalog">
+                            <svg class="header__menu-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_943)">
+                                <path d="M2.375 3.16663H16.625V4.74996H2.375V3.16663ZM2.375 8.70829H11.875V10.2916H2.375V8.70829ZM2.375 14.25H16.625V15.8333H2.375V14.25Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_943">
+                                <rect width="19" height="19" fill="currentColor"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Каталог</span>
+                        </button>
+                        <button type="button" class="header__menu header__menu--search js-open-search">
+                            <img class="header__menu-icon" src="images/search.svg" alt="" width="19" height="19">
+                        </button>
+                        <div class="search js-search">
+                            <div class="search__content js-content">
+                                <form class="search__form">
+                                    <input class="input" id="search" name="search" placeholder="Например, двухъярусная кровать" type="text" inputmode="search" aria-label="Поиск">
+                                    <button rel="noopener" class="search__button">
+                                        <img class="search__button-icon" src="images/search.svg" alt="" width="19" height="19">
+                                    </button>
+                                </form>
+                                <button type="button" class="search__close js-close-search">
+                                    <img class="search__close-icon" src="images/plus.svg" alt="" width="24" height="24">
                                 </button>
-                            </form>
-                            <button type="button" class="search__close js-close-search">
-                                <img class="search__close-icon" src="images/plus.svg" alt="" width="24" height="24">
-                            </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="user-list">
-                    <a class="user-list__item user-list__item--favorites" href="javascript:void(0);" title="Избранное">
-                        <img class="user-list__icon" src="images/heart.svg" alt="" width="24" height="24">
-                    </a>
-                    <a class="user-list__item user-list__item--address" href="javascript:void(0);" title="Адреса">
-                        <span class="user-list__text">Адреса</span>
-                        <img class="user-list__icon" src="images/map-pin.svg" alt="" width="19" height="19">
-                    </a>
-                    <a class="user-list__item user-list__item--profile" href="javascript:void(0);" title="Профиль">
-                        <span class="user-list__text">Профиль</span>
-                        <img class="user-list__icon" src="images/user.svg" alt="" width="19" height="19">
-                    </a>
-                    <a class="user-list__item user-list__item--cart" href="javascript:void(0);" title="Корзина">
-                        <img class="user-list__icon" src="images/cart.svg" alt="" width="24" height="24">
-                        <span class="user-list__count">1</span>
-                    </a>
+                    <div class="user-list">
+                        <a class="user-list__item user-list__item--favorites" href="javascript:void(0);" title="Избранное">
+                            <img class="user-list__icon" src="images/heart.svg" alt="" width="24" height="24">
+                        </a>
+                        <a class="user-list__item user-list__item--address" href="javascript:void(0);" title="Адреса">
+                            <span class="user-list__text">Адреса</span>
+                            <img class="user-list__icon" src="images/map-pin.svg" alt="" width="19" height="19">
+                        </a>
+                        <a class="user-list__item user-list__item--profile" href="javascript:void(0);" title="Профиль">
+                            <span class="user-list__text">Профиль</span>
+                            <img class="user-list__icon" src="images/user.svg" alt="" width="19" height="19">
+                        </a>
+                        <a class="user-list__item user-list__item--cart" href="javascript:void(0);" title="Корзина">
+                            <img class="user-list__icon" src="images/cart.svg" alt="" width="24" height="24">
+                            <span class="user-list__count">1</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,7 +167,12 @@
                     </div>
                     <h1 class="first-block__title">Спальня</h1>
                     <p class="first-block__description">Спальня коллекции Альба</p>
-                    <img class="first-block__image" src="images/back.jpg" alt="" width="1160" height="300">
+                    <picture class="first-block__picture">
+                        <source srcset="/images/content/main-mobile.webp" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="/images/content/main-mobiile.jpg" type="image/jpg" media="(max-width: 767px)">
+                        <source srcset="/images/content/main.webp" type="image/webp" media="">
+                        <img class="first-block__image" src="/images/content/main.jpg" alt="" width="1160" height="300">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -149,25 +183,40 @@
                     <div class="main-slider__slider js-main-slider">
                         <ul class="main-slider__list swiper-wrapper">
                             <li class="main-slider__item swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                                <picture class="main-slider__picture">
+                                    <source srcset="/images/content/min1.webp" type="image/webp" media="">
+                                    <img class="main-slider__image" src="/images/content/min1.jpg" alt="" width="260" height="170">
+                                </picture>
                             </li>
                             <li class="main-slider__item main-slider__item--video swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                                <video class="main-slider__image" src="/images/content/first-block.mp4" controls width="260" height="170">
                             </li>
                             <li class="main-slider__item swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg " alt="" width="260" height="170">
+                                <picture class="main-slider__picture">
+                                    <source srcset="/images/content/min2.webp" type="image/webp" media="">
+                                    <img class="main-slider__image" src="/images/content/min2.jpg" alt="" width="260" height="170">
+                                </picture>
                             </li>
                             <li class="main-slider__item swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                                <picture class="main-slider__picture">
+                                    <source srcset="/images/content/min3.webp" type="image/webp" media="">
+                                    <img class="main-slider__image" src="/images/content/min3.jpg" alt="" width="260" height="170">
+                                </picture>
                             </li>
                             <li class="main-slider__item swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                                <picture class="main-slider__picture">
+                                    <source srcset="/images/content/min4.webp" type="image/webp" media="">
+                                    <img class="main-slider__image" src="/images/content/min4.jpg" alt="" width="260" height="170">
+                                </picture>
                             </li>
                             <li class="main-slider__item main-slider__item--video swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                                <video class="main-slider__image" src="/images/content/first-block.mp4" controls width="260" height="170">
                             </li>
                             <li class="main-slider__item swiper-slide">
-                                <img class="main-slider__image" src="images/back.jpg" alt="" width="260" height="170">
+                                <picture class="main-slider__picture">
+                                    <source srcset="/images/content/min1.webp" type="image/webp" media="">
+                                    <img class="main-slider__image" src="/images/content/min1.jpg" alt="" width="260" height="170">
+                                </picture>
                             </li>
                         </ul>
                     </div>
